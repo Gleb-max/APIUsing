@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1 class="center">{{ title }}</h1>
+    <h1 class="center">{{ user["name"] }} {{ user["surname"] }}</h1>
+    <h3 class="center">Hometown {{ user["city_from"] }}</h3>
+    <p class="center">
+        <img src="{{ image_url }}">
+    </p>
+
+{% endblock %}
